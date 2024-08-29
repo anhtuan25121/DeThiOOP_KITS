@@ -49,7 +49,7 @@ public  class DanhSachVatPham {
             }
         }
 
-        System.out.println("\n-------- Thông tin vật phẩm tốn nhiều xu vàng nhất --------\n");
+        System.out.println("\n\n-------- Thông tin vật phẩm tốn nhiều xu vàng nhất --------\n");
         for(VatPham x: this.arr){
             if(x.tinhSoVangQuyDoi() == max){
 
@@ -63,7 +63,7 @@ public  class DanhSachVatPham {
     //Cau 4
     public void cau4(){
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\nHãy nhập vào số vàng mà Spon thu thập được: ");
+        System.out.print("\n\n~~~~~~~~ -> Hãy nhập vào số vàng mà Spon thu thập được: ");
         double sovang = scanner.nextInt();
 
         double tongsovanggiaicuu = 0;
@@ -72,10 +72,10 @@ public  class DanhSachVatPham {
         }
 
         if(sovang >= tongsovanggiaicuu){
-            System.out.println("Spon giải cứu thành công đồng đội! ^^ yeah yeah");
+            System.out.println("^^ ^^ ^^ Spon giải cứu thành công đồng đội! ^^ yeah yeah");
         }else{
-            System.out.println("Số xu vàng cần để giải cứu là: "+tongsovanggiaicuu);
-            System.out.println("Thật đáng tiếc! Spon không đủ số xu vàng để giải cứu thành công đồng đội. == huhu");
+            System.out.println("~~~~~~ Số xu vàng cần để giải cứu là: "+tongsovanggiaicuu);
+            System.out.println("~~~~~~ Thật đáng tiếc! Spon không đủ số xu vàng để giải cứu thành công đồng đội. == huhu");
         }
         System.out.println("---------------------------------------------------");
     }
